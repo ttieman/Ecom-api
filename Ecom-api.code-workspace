@@ -1,0 +1,29 @@
+{
+	"folders": [
+		{
+			"name": "Ecom-api",
+			"path": "."
+		},
+		{
+			"name": "models",
+			"path": "../../../bootcamp-repo/UofA-VIRT-FSF-PT-12-2022-U-LOLC/13-ORM/02-Challenge/Develop/models"
+		},
+		{
+			"name": "db",
+			"path": "../../../bootcamp-repo/UofA-VIRT-FSF-PT-12-2022-U-LOLC/13-ORM/02-Challenge/Develop/db"
+		},
+		{
+			"name": "routes",
+			"path": "../../../bootcamp-repo/UofA-VIRT-FSF-PT-12-2022-U-LOLC/13-ORM/02-Challenge/Develop/routes"
+		},
+		{
+			"name": "seeds",
+			"path": "../../../bootcamp-repo/UofA-VIRT-FSF-PT-12-2022-U-LOLC/13-ORM/02-Challenge/Develop/seeds"
+		},
+		{
+			"name": "config",
+			"path": "../../../bootcamp-repo/UofA-VIRT-FSF-PT-12-2022-U-LOLC/13-ORM/02-Challenge/Develop/config"
+		}
+	],
+	"settings": {}
+}
