@@ -48,8 +48,12 @@ router.get('/:id', async(req, res) => {
 
 
 });
+ // the post request should look like this:
+// {
+//   "tag_name": "test tag"
+// }
 
-router.post('/', async(req, res) => {
+router.post('/', async(req, res) => {      
   // create a new tag
   try{
     const tagData = await Tag.create(req.body);
@@ -65,7 +69,16 @@ router.post('/', async(req, res) => {
 router.put('/:id', async (req, res) => {
   // update a tag's name by its `id` value
   try{
-    const tagData = await Tag.update(req.body, {where: {id: req.params.id}});
+    const tagData = await Tag.update(req.body, {
+      where: {id: req.params.id}, 
+      include: [
+        {
+          model: Product,
+          as: 'tagged_products',
+          through: ProductTag,
+        },
+      ],
+        });
     res.status(200).json(tagData);
     
 
